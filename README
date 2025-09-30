@@ -1,0 +1,7 @@
+TRABAJO PRACTICO FLEXBOX
+
+#  Revista Digital - Mobile First con Flexbox
+
+Este proyecto es una maqueta simple de una página de noticias tipo revista digital, diseñada **mobile first** y construida únicamente con **HTML + CSS**.  
+Se utiliza **Flexbox** para la organización de los elementos y un **carrusel horizontal** para las noticias secundarias.
+
