@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+#menu {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#logo img {
+  width: 120px;
+  height: auto;
+}
+
+#subscribe {
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+#mainNew {
+  display: flex;
+  flex-direction: column; 
+  margin: 15px;
+}
+
+#mainNew img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+#mainNew h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#mainNew p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+#newList {
+  display: flex;
+  flex-direction: row;         
+  gap: 15px;                    
+  margin: 15px;
+  overflow-x: auto;             
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch; 
+}
+
+#newsCard {
+  flex: 0 0 80%;                 
+  scroll-snap-align: start;      
+  display: flex;
+  flex-direction: column;
+}
+
+#newsCard img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+#newsCard h3 {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  #newList {
+    overflow-x: hidden; 
+    flex-wrap: wrap;    
+  }
+
+  #newsCard {
+    flex: 1 1 30%;      
+  }
+}
